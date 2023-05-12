@@ -17,7 +17,7 @@ Open `src/components/Todo/TodoPrivateList.svelte` and add the following code:
 <GithubLink link="https://github.com/hasura/learn-graphql/blob/master/tutorials/frontend/svelte-apollo/app-final/src/components/Todo/TodoPrivateList.svelte" text="src/components/Todo/TodoPrivateList.svelte" />
 
 ```javascript
-+ import { gql } from '@apollo/client';
++ import { gql } from '@apollo/client/core';
 
 import TodoItem from "./TodoItem";
 import TodoFilters from "./TodoFilters";
@@ -48,7 +48,7 @@ The query is now ready, let's integrate it with our svelte code.
 `query` function is being imported from `svelte-apollo`
 
 ```javascript
-import { gql } from "@apollo/client";
+import { gql } from "@apollo/client/core";
 import { query } from "svelte-apollo";
 
 import TodoItem from "./TodoItem";
